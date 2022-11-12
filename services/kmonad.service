@@ -1,0 +1,9 @@
+[Unit]
+Description=My custom kmonad service
+
+[Service]
+ExecStart=/bin/bash -c "/home/ozan/myPrograms/kmonad/kmonad /home/ozan/myPrograms/kmonad/ozan.kbd"
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
